@@ -1,0 +1,21 @@
+int led = 13;
+int i=0;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(led , OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  while (i<5)
+  {
+  digitalWrite(led,HIGH);  
+  delay(300);
+  digitalWrite(led,LOW);
+  delay(300);
+  i++;
+  }
+  digitalWrite(led,LOW);
+}
